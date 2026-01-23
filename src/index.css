@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+
+:root{
+    --font-lato: 'Lato', sans-serif;
+    --font-playfair: 'Playfair Display', serif;
+}
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.body-font {
+    font-family: var(--font-lato);
+}
+
+
+.gradient-text {
+  background: linear-gradient(to right, rgb(255,1,0), rgb(205,155,53), rgb(255,1,0));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    padding: 0;
+    margin: 0;
+}
+
+.venue-card{
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform:translate(-50% , -50%);
+}
+
+.btngradiant{ background:linear-gradient(to right, #FF0100, #CD9B35)
+}
+.boxgradiant {
+  background: #FF0100;
+    background-image: url(assets/icons/vector-bg-01.webp), url(assets/icons/vector-bg-02.webp);
+    background-repeat: no-repeat;
+    background-position: left 20px top 10px, right 20px top 10px;
+    border-radius: 15px;
+}
+.catgorybox {
+    background-image: url(assets/icons/wedding-bg.webp), url(assets/icons/venue-bg.webp);
+    background-repeat: no-repeat;
+    background-position: left  top 10px, right  top 10px;
+}
+
+.slim-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.slim-scroll::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;         
+  height: 6px;      
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a0a0a0;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee-manual {
+  animation: marquee 25s linear infinite;
+}
